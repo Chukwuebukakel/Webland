@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webland Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/Webland-Logo.png" class="logo">
+            <div>
+                <button class="language-btn">English</button>
+                <button onclick="document.location='https://wa.link/b9w3jc'">Begin</button>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>Unlimited Courses, More Knowledge</h1>
+            <h3>Join US now at PROMO Training Fee <S>N15,000</S> FOR N1,000 only.</h3>
+            <p>Ready to Start?</p>
+            
+            <div>
+                
+                <button onclick="document.location='https://wa.link/b9w3jc'">Begin</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <h3 class="heading">Chukwuebuka's Video Gallery</h3>
+    <h1>Masterclass Courses Preview</h1>
+    <div class="container">        
+        <div class="main-video">
+            <div class="video">
+                <video src="images/Ahmed.mp4" controls muted autoplay></video>
+                    <h3 class="title"></h3>Artifical Intelligence 101</h3>
+            </div>
+          
+
+    </div>
+
+    <div class="video-list">
+        <div class="vid active">
+            <video src="images/Books.mp4" controls muted autoplay></video>
+            <h3 class="title">How to Self Publish on Amazon KDP and Earn</h3>
+        </div>
+        
+        <div class="vid">
+            <video src="images/Ahmed.mp4" controls muted autoplay></video>
+            <h3 class="title">Contents and Marketing Videos</h3>
+        </div>
+        
+        
+    </div>
+    </div>
+    <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo =  document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title');
+
+        listVideo.forEach(video =>{
+            video.onclick = () =>{
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                };
+            };
+        });
+    </script>
+
+<div class="box">
+    <h2>List Of Courses for MasterClass</h2>
+    <ul>
+        <li><span>1</span>Artifical Intelligence 101</li>
+        <li><span>2</span>A.i Image and Artwork Creation And Sales</li>
+        <li><span>3</span>How to Start a T-Shirt Business Using A.I</li>
+        <li><span>4</span>A.i Animated Marketing Videos</li>
+        <li><span>5</span>Self-Publish A 3D Book using A.I</li>
+        <li><span>6</span>How to Self-Publish On Amazon KDP and Earn</li>
+        <li><span>7</span>How to Download Free Non-Copyright Music For your Videos</li>
+        <li><span>8</span>How to Start a Faceless Youtube Channel</li>
+        <li><span>9</span>Generate Blogging/Video Content With A.I</li>
+        <li><span>10</span>Whatsapp Mastery</li>
+        <button onclick="document.location='https://wa.link/b9w3jc'">Begin</button>
+    </ul>
+</div>
+
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2>Best Classes to Grab Invaluable Knowledge from.</h2>
+                <P>Join us on whatsapp and telegram for a small token for this class.</P>
+            </div>
+            <div class="img-col">
+                <img src="images/feature 3.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="img-col">
+                <img src="images/man.png">
+            </div>
+            <div class="text-col">
+                <h2>Practical, Interactive and Do-able Lessons.</h2>
+                <P>You have direct access to your tutor <br> no hide and seek.</P>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="text-col">
+                <h2>Everyone Goes Home with fresh skills.</h2>
+                <P>A Knowledge that converts into cash <br>and teachable to others.</P>
+            </div>
+            <div class="img-col">
+                <img src="images/ebook.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="img-col">
+                <img src="images/WhatsApp.png">
+            </div>
+            <div class="text-col">
+                <h2>Pay N1,000 Only.</h2>
+                <P>Sterling Bank Account: <b> 0083864895</b> Hollandaise Enterprises.</P>
+                <P>Send Proof of Payment to <b> <Snap>Whatsapp Number:</Snap> 08068179754</b> Webland Academy.</P>
+            </div>
+            
+        </div>
+
+
+    </div>
+
+    <div class="faq">
+        <h2>Frequently Asked Questions<h2>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">What is Webland Academy?</label>
+                <div class="content">
+                    <p>Webland Academy is an online institute that focuses on practical and do-able information<br>that students/participants can use to earn money afterwards.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">How much does it cost?</label>
+                <div class="content">
+                    <p> We squeezed a ₦50,000 course to  ₦1,000. No extra costs, no contracts.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">Where can I join the class?</label>
+                <div class="content">
+                    <p> Once you have any internet-connected device, whatsappp and telegram Apps</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fourth">
+                <label for="fourth">What is duration?</label>
+                <div class="content">
+                    <p> Usually 4 days Course, it could get longer (5days) if the participants did not understand a course>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fifth">
+                <label for="fifth">Who's qualified to join?</label>
+                <div class="content">
+                    <p>Anyone willing to upscale their income stream.</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="sixth">
+                <label for="sixth">Is it good for age limit?</label>
+                <div class="content">
+                    <p> Knowledge has no boundaries, we accommodate anyone that can understand, comprehend and reproduce knowledge</p>
+                </div>
+            </li>
+
+
+        </ul>
+        <small>
+            <p>Ready to join the classes? Use the link above and win a free impactful e-book.</p> 
+        </small>
+        
+    </div>
+    
+
+    <div class="footer">
+        <h2>Questions? Call 080-68-17-97-54</h2>
+
+        <div class="row">
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div class="col">
+                <a href="#">Help Center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookies Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="col">
+                <a href="#">account</a>
+                <a href="#">Follow our classes on Youtube</a>
+                <a href="#">Corporate information</a>
+                <a href="#">Only on Webland Academy</a>
+            </div>
+            <div class="col">
+                <a href="#">Media Center</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+          </div>
+        </div>
+        <button>English</button>
+        <p class="copyright-txt">Webland Nigeria</p>
+    </div>
+
+</body>
+</HTML>    
